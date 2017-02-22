@@ -7,6 +7,7 @@ let mainFile = 'main.js';
 
 let browserify;
 let view ;
+
 function setView(_view) {
     view = _view;
 }
@@ -82,7 +83,7 @@ var SERVERS = {
 };
 
 /*Note that for SSL environments (https) define the server as: var PROXY_SERVER = https://your-server:443*/
-var PROXY_SERVER = 'http://your-server:your-port';
+var PROXY_SERVER = 'https://primosb-pmtna.hosted.exlibrisgroup.com:443';
 
 
 

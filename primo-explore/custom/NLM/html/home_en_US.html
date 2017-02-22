@@ -1,0 +1,81 @@
+<div>
+    <md-content class="md-padding" layout-xs="column" layout="row" style="max-width: 960px">
+        <div flex="60"  layout="column">
+            <md-card class="default-card">
+
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">How does this work?</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>
+                        Scholar OneSearch provides simple, one-stop searching for books and e-books, videos, articles, digital media, and more. Search local Northeastern collections and global resources, with many items available in full text online.
+                    </p>
+                    <p>
+                        Scholar OneSearch also helps you manage your research. Sign in with your myNEU credentials in order to:
+                    </p>
+                    <ul>
+                        <li>Renew books and videos</li>
+                        <li>Create lists</li>
+                        <li>Export citations to Refworks and Endnote Web</li>
+                        <li>Order materials from other libraries.</li>
+                        <li>View full search results. (Some databases, like Web of Science, only show results when you're signed in.)</li>
+                    </ul>
+                </md-card-content>
+
+            </md-card>
+            <md-card class="default-card">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Where can I get help?</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>
+                        <a href="http://danizen.net/">Ask Dan</a> how to start your search
+                    </p>
+                    <p>
+                        Dig deeper into library resources with <a href="#">dedicated subject guides</a>, which offer advice, recommendations, and contact information for subject librarians in your discipline.
+                    </p>
+                </md-card-content>
+            </md-card>
+            <md-card class="default-card">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Questions? Comments?</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <a href="http://danizen.net/" class="arrow-link">
+                        Let Dan know what you think!
+                        <prm-icon link-arrow>
+                            <md-icon md-svg-icon="./images/chevron-right.svg"></md-icon>
+                        </prm-icon>
+                    </a>
+                </md-card-content>
+            </md-card>
+
+        </div>
+        <div flex-xs flex="40" layout="column">
+            <md-card class="default-card">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Libraries</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>Choose a library below to search its holdings:</p>
+                    <md-list class="default-list">
+                        <md-list-item class="list-item-as-link" ng-click="goToLibrary()" ng-repeat="library in librariesList">
+                            <p>{{library}}</p>
+                            <prm-icon link-arrow>
+                                <md-icon md-svg-icon="./images/chevron-right.svg"></md-icon>
+                            </prm-icon>
+                        </md-list-item>
+                    </md-list>
+                </md-card-content>
+            </md-card>
+        </div>
+    </md-content>
+</div>

@@ -117,6 +117,43 @@ The development package allows you to configure :
     [JavaScript](https://github.com/ExLibrisGroup/primo-explore-package/tree/master/VIEW_CODE/js "javascript documentation")
 
 
+##Pluggable Directives/Components
+
+- On search results, the following directives can be overridden:
+    * Navbar
+        + `prm-logo-after` - so, try no logo, but a controller that displays a larger image 
+        + `prm-main-menu-after` - after top menu center links
+        + `prm-search-bookmark-filter-after` - right after pin
+        + `prm-user-area-after` - after "Guest"
+    * Search Bar
+        + `prm-search-bar-after`
+    * Within search results
+        * `prm-did-u-mean-after` - This is inside the material design card, md-card
+        * `prm-search-after` - bottom or top of search area?
+        * `prm-page-nav-after` - do not see the page navigator right now
+        * `prm-search-result-list-after`
+    * Facets
+        + `prm-search-result-sort-by-after`
+        + `prm-facet-exact-after` - will appear in facet groups, parameterized by parent controller
+        + `prm-facet-after` - after all facets
+    * After application
+        `prm-explore-main-after` - here's where we put the footer 
+
+- On details, the following directive tags can be overridden:
+    * `prm-full-view-service-container-after` - appears many times
+    * `prm-service-header-after` - appears many times
+    * `prm-action-container-after` - appears many times, parameters by parent `$ctrl.service.serviceName`
+    * `prm-action-list-after` - appears after beginning of action list.
+    * `prm-view-online-after` - appears in more than one context - View Online and More
+    * `prm-service-links-after` - could put MARC here.
+    * `prm-virtual-browse-after`
+    * `prm-full-view-after`
+    * `prm-full-view-page-after`
+
+## Other Useful things
+
+- `window.appConfig` - appears to store current view
+
 
 ##Publishing packages
 -   Once you finish customizing the package , you can zip it and upload it via the Primo BackOffice
